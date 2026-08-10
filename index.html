@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Happy Birthday Kubra ❤️</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+body{
+    background:#08060b;
+    color:#fff;
+    font-family:'Montserrat',sans-serif;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* ================= BACKGROUND ================= */
+
+.page{
+    position:fixed;
+    inset:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+}
+
+.page.active{
+    display:flex;
+    animation:pageIn 1s ease;
+}
+
+@keyframes pageIn{
+    from{
+        opacity:0;
+        transform:scale(1.03);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+.bg{
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at 50% 10%,rgba(170,70,110,.35),transparent 35%),
+    radial-gradient(circle at 10% 90%,rgba(100,60,130,.22),transparent 35%),
+    linear-gradient(145deg,#07050a,#1b0b17,#08060b);
+}
+
+.content{
+    width:min(92%,430px);
+    text-align:center;
+    position:relative;
+    z-index:5;
+}
+
+.gold{
+    color:#e9c98f;
+}
+
+.serif{
+    font-family:'Cormorant Garamond',serif;
+}
+
+.small-title{
+    font-size:10px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    color:#e9c98f;
+    margin-bottom:16px;
+}
+
+.main-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:65px;
+    line-height:.85;
+    font-weight:500;
+}
+
+.main-title span{
+    display:block;
+    color:#d995a8;
+    font-style:italic;
+}
+
+.description{
+    color:#c7bcc3;
+    font-size:12px;
+    line-height:1.8;
+    margin-top:22px;
+}
+
+.date{
+    color:#e9c98f;
+    letter-spacing:5px;
+    font-size:10px;
+    margin-top:22px;
+}
+
+.primary-btn{
+    margin-top:30px;
+    padding:15px 27px;
+    border-radius:100px;
+    border:1px solid rgba(233,201,143,.55);
+    background:rgba(255,255,255,.06);
+    color:#fff;
+    font-size:12px;
+    letter-spacing:1px;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
+}
+
+/* ================= MUSIC ================= */
+
+.music-btn{
+    position:fixed;
+    z-index:100;
+    top:15px;
+    right:15px;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.3);
+    background:rgba(20,15,22,.7);
+    color:white;
+    font-size:20px;
+}
+
+/* ================= BALLOONS ================= */
+
+.balloon-area{
+    position:absolute;
+    inset:18% 0 4%;
+}
+
+.balloon{
+    position:absolute;
+    width:62px;
+    height:78px;
+    border-radius:50% 50% 47% 47%;
+    box-shadow:
+    inset -12px -14px 20px rgba(0,0,0,.2),
+    inset 8px 7px 14px rgba(255,255,255,.25),
+    0 15px 30px rgba(0,0,0,.3);
+    animation:float 4s ease-in-out infinite;
+}
+
+.balloon:after{
+    content:"";
+    position:absolute;
+    width:1px;
+    height:95px;
+    left:50%;
+    top:76px;
+    background:rgba(255,255,255,.3);
+}
+
+.b1{
+    left:6%;
+    top:5%;
+    background:#dc6689;
+}
+.b2{
+    left:30%;
+    top:0;
+    background:#8370d4;
+}
+.b3{
+    right:27%;
+    top:9%;
+    background:#e2ae5c;
+}
+.b4{
+    right:5%;
+    top:1%;
+    background:#55b9b0;
+}
+.b5{
+    left:15%;
+    top:45%;
+    background:#e36d66;
+}
+.b6{
+    left:43%;
+    top:40%;
+    background:#bd68a8;
+}
+.b7{
+    right:14%;
+    top:48%;
+    background:#5d8fd1;
+}
+.b8{
+    left:3%;
+    bottom:4%;
+    background:#b95c82;
+}
+.b9{
+    right:5%;
+    bottom:5%;
+    background:#8d6bc4;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0) rotate(-3deg);
+    }
+    50%{
+        transform:translateY(-18px) rotate(4deg);
+    }
+}
+
+.balloon.pop{
+    animation:pop .5s forwards;
+}
+
+@keyframes pop{
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+    60%{
+        transform:scale(1.4);
+        opacity:.7;
+    }
+    100%{
+        transform:scale(0);
+        opacity:0;
+    }
+}
+
+.counter{
+    margin-top:18px;
+    color:#bfb3bb;
+    font-size:10px;
+    letter-spacing:3px;
+}
+
+/* ================= CAKE ================= */
+
+.cake-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:43px;
+    line-height:.9;
+}
+
+.cake-title span{
+    color:#d995a8;
+    font-style:italic;
+}
+
+.cake{
+    position:relative;
+    width:280px;
+    height:290px;
+    margin:20px auto 0;
+}
+
+.plate{
+    position:absolute;
+    bottom:12px;
+    left:10px;
+    width:260px;
+    height:23px;
+    border-radius:50%;
+    background:linear-gradient(#f6dfc7,#99676b);
+}
+
+.cake-body{
+    position:absolute;
+    left:28px;
+    bottom:32px;
+    width:224px;
+    height:120px;
+    border-radius:18px 18px 25px 25px;
+    background:linear-gradient(90deg,#9d5267,#e7a0aa,#a3566b);
+    box-shadow:inset 0 -15px 20px rgba(80,25,45,.25);
+}
+
+.cake-top{
+    position:absolute;
+    z-index:2;
+    left:28px;
+    bottom:125px;
+    width:224px;
+    height:60px;
+    border-radius:50%;
+    background:#ffe9e4;
+}
+
+.drip{
+    position:absolute;
+    z-index:3;
+    left:38px;
+    bottom:128px;
+    width:204px;
+    height:30px;
+    background:#fff7ef;
+    border-radius:50%;
+}
+
+.candle{
+    position:absolute;
+    z-index:8;
+    bottom:173px;
+    width:14px;
+    height:62px;
+    border-radius:4px;
+    background:repeating-linear-gradient(
+        45deg,
+        #fff 0 7px,
+        #cb7588 7px 13px
+    );
+}
+
+.c1{left:82px}
+.c2{left:133px}
+.c3{left:184px}
+
+.age{
+    position:absolute;
+    z-index:10;
+    left:50%;
+    bottom:175px;
+    transform:translateX(-50%);
+    color:#e9c98f;
+    font-family:'Cormorant Garamond',serif;
+    font-size:23px;
+    font-weight:bold;
+}
+
+.flame{
+    position:absolute;
+    width:12px;
+    height:20px;
+    left:1px;
+    top:-22px;
+    background:#ffd05b;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    box-shadow:0 0 18px #ffb83c;
+    animation:flicker .25s infinite alternate;
+}
+
+@keyframes flicker{
+    to{
+        transform:rotate(-42deg) scale(1.15);
+    }
+}
+
+.flame.off{
+    display:none;
+}
+
+.cake-text{
+    color:#c9bec5;
+    font-size:11px;
+    line-height:1.7;
+}
+
+.blow-btn{
+    margin-top:20px;
+    padding:13px 22px;
+    border-radius:100px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(233,201,143,.5);
+    color:#fff;
+}
+
+/* ================= MEMORIES ================= */
+
+.memory-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:42px;
+    line-height:.9;
+}
+
+.memory-title span{
+    color:#d995a8;
+    font-style:italic;
+}
+
+.gallery{
+    position:relative;
+    width:100%;
+    height:54vh;
+    margin-top:15px;
+}
+
+.photo-card{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:min(76vw,315px);
+    height:min(54vh,420px);
+    padding:8px;
+    background:#f8eee4;
+    border-radius:7px;
+    box-shadow:0 25px 65px rgba(0,0,0,.7);
+    transform:translate(-50%,-50%);
+    transition:.5s ease;
+}
+
+.photo-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:3px;
+}
+
+.photo-card:nth-child(1){
+    transform:translate(-53%,-50%) rotate(-7deg);
+}
+
+.photo-card:nth-child(2){
+    transform:translate(-47%,-50%) rotate(6deg);
+}
+
+.photo-card:nth-child(3){
+    transform:translate(-51%,-50%) rotate(-2deg);
+}
+
+.photo-card:nth-child(4){
+    transform:translate(-49%,-50%) rotate(8deg);
+}
+
+.photo-card.current{
+    transform:translate(-50%,-50%) rotate(0);
+    z-index:20;
+}
+
+.memory-caption{
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+}
+
+.memory-hint{
+    color:#aaa0a7;
+    font-size:10px;
+    margin-top:7px;
+}
+
+.continue-btn{
+    margin-top:17px;
+    padding:12px 20px;
+    border-radius:100px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+}
+
+/* ================= ENVELOPE ================= */
+
+.envelope{
+    position:relative;
+    width:300px;
+    height:195px;
+    margin:35px auto 0;
+    background:#bf7587;
+    border-radius:8px;
+    box-shadow:0 30px 70px rgba(0,0,0,.7);
+    perspective:900px;
+}
+
+.env-back{
+    position:absolute;
+    inset:0;
+    background:#c78395;
+    border-radius:8px;
+}
+
+.flap{
+    position:absolute;
+    inset:0;
+    background:#e2a8b2;
+    clip-path:polygon(0 0,100% 0,50% 62%);
+    transform-origin:top;
+    transition:1s;
+    z-index:6;
+}
+
+.envelope.open .flap{
+    transform:rotateX(180deg);
+}
+
+.env-front{
+    position:absolute;
+    inset:0;
+    z-index:5;
+    background:#c67b8e;
+    clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);
+}
+
+.seal{
+    position:absolute;
+    z-index:10;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    width:53px;
+    height:53px;
+    border-radius:50%;
+    background:#7c304d;
+    display:grid;
+    place-items:center;
+    font-size:23px;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.envelope-hint{
+    color:#bbb0b8;
+    font-size:11px;
+    margin-top:18px;
+}
+
+/* ================= FINAL ================= */
+
+.final{
+    position:fixed;
+    inset:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    overflow:auto;
+    padding:25px 16px;
+    background:
+    radial-gradient(circle at top,#4a2139,#09070c 70%);
+    z-index:500;
+}
+
+.final.show{
+    display:flex;
+    animation:pageIn 1s ease;
+}
+
+.final-card{
+    width:min(100%,390px);
+    max-height:94vh;
+    overflow:auto;
+    padding:23px 20px 28px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:28px;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(18px);
+    box-shadow:0 30px 90px rgba(0,0,0,.8);
+}
+
+.final-photo{
+    width:145px;
+    height:145px;
+    object-fit:cover;
+    border-radius:50%;
+    padding:5px;
+    background:linear-gradient(135deg,#fff2c7,#c89a58,#fff);
+}
+
+.final-title{
+    font-family:'Cormorant Garamond',serif;
+    font-size:39px;
+    line-height:.9;
+    margin-top:18px;
+}
+
+.final-title span{
+    display:block;
+    color:#d995a8;
+    font-style:italic;
+}
+
+.final-date{
+    color:#e9c98f;
+    letter-spacing:4px;
+    font-size:9px;
+    margin-top:10px;
+}
+
+.message{
+    margin-top:20px;
+    text-align:left;
+    color:#f2e6ec;
+    font-size:12px;
+    line-height:1.85;
+    white-space:pre-line;
+}
+
+.signature{
+    margin-top:18px;
+    font-family:'Cormorant Garamond',serif;
+    font-size:22px;
+    color:#ffe9cf;
+}
+
+/* ================= EFFECTS ================= */
+
+.confetti{
+    position:fixed;
+    top:-20px;
+    width:7px;
+    height:13px;
+    z-index:700;
+    animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+.heart{
+    position:fixed;
+    bottom:-30px;
+    z-index:800;
+    animation:heartUp 5s linear forwards;
+}
+
+@keyframes heartUp{
+    to{
+        transform:translateY(-110vh) rotate(20deg);
+        opacity:0;
+    }
+}
+
+@media(max-height:650px){
+    .main-title{
+        font-size:54px;
+    }
+
+    .cake{
+        transform:scale(.82);
+        margin-top:-5px;
+    }
+
+    .gallery{
+        height:48vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="music" src="birthday-song.mp3" loop preload="auto"></audio>
+
+<button class="music-btn" id="musicBtn">♫</button>
+
+<!-- ================= PAGE 1 ================= -->
+
+<section class="page active" id="page1">
+
+<div class="bg"></div>
+
+<div class="content">
+
+<div class="small-title">
+A little surprise • made with love
+</div>
+
+<h1 class="main-title">
+For
+<span>Kubra</span>
+</h1>
+
+<p class="description">
+A little journey through memories,<br>
+wishes and everything that makes you special.
+</p>
+
+<div class="date">
+23 • AUGUST • 2026
+</div>
+
+<button class="primary-btn" id="beginBtn">
+✦ Tap to Begin
+</button>
+
+</div>
+</section>
+
+
+<!-- ================= PAGE 2 ================= -->
+
+<section class="page" id="page2">
+
+<div class="bg"></div>
+
+<div class="content" style="position:absolute;top:8%;">
+
+<div class="small-title">
+Chapter 01
+</div>
+
+<h1 class="serif" style="font-size:40px;font-weight:500;">
+Pop the surprises 🎈
+</h1>
+
+<p class="description">
+Every balloon hides a little piece of the surprise.
+</p>
+
+<div class="counter" id="counter">
+9 BALLOONS LEFT
+</div>
+
+</div>
+
+<div class="balloon-area">
+
+<div class="balloon b1"></div>
+<div class="balloon b2"></div>
+<div class="balloon b3"></div>
+<div class="balloon b4"></div>
+<div class="balloon b5"></div>
+<div class="balloon b6"></div>
+<div class="balloon b7"></div>
+<div class="balloon b8"></div>
+<div class="balloon b9"></div>
+
+</div>
+
+</section>
+
+
+<!-- ================= PAGE 3 ================= -->
+
+<section class="page" id="page3">
+
+<div class="bg"></div>
+
+<div class="content">
+
+<div class="small-title">
+Chapter 02 • Make a wish
+</div>
+
+<h1 class="cake-title">
+Twenty-six looks<br>
+<span>beautiful</span> on you.
+</h1>
+
+<div class="cake">
+
+<div class="age">
+26
+</div>
+
+<div class="candle c1">
+<div class="flame"></div>
+</div>
+
+<div class="candle c2">
+<div class="flame"></div>
+</div>
+
+<div class="candle c3">
+<div class="flame"></div>
+</div>
+
+<div class="cake-top"></div>
+
+<div class="drip"></div>
+
+<div class="cake-body"></div>
+
+<div class="plate"></div>
+
+</div>
+
+<p class="cake-text">
+Make a wish, Kubra ✨<br>
+Blow toward your phone or use the button below.
+</p>
+
+<button class="blow-btn" id="blowBtn">
+🕯️ Blow Out Candles
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================= PAGE 4 ================= -->
+
+<section class="page" id="page4">
+
+<div class="bg"></div>
+
+<div class="content">
+
+<div class="small-title">
+Chapter 03 • Our memories
+</div>
+
+<h1 class="memory-title">
+A few moments<br>
+<span>worth keeping.</span>
+</h1>
+
+<div class="gallery" id="gallery">
+
+<div class="photo-card current">
+<img src="kubra1.jpg">
+</div>
+
+<div class="photo-card">
+<img src="kubra2.jpg">
+</div>
+
+<div class="photo-card">
+<img src="kubra3.jpg">
+</div>
+
+<div class="photo-card">
+<img src="kubra4.jpg">
+</div>
+
+</div>
+
+<div class="memory-caption" id="caption">
+A beautiful moment ✨
+</div>
+
+<div class="memory-hint">
+Tap or swipe to see the next memory
+</div>
+
+<button class="continue-btn" id="continueBtn">
+Continue to the last surprise →
+</button>
+
+</div>
+
+</section>
+
+
+<!-- ================= PAGE 5 ================= -->
+
+<section class="page" id="page5">
+
+<div class="bg"></div>
+
+<div class="content">
+
+<div class="small-title">
+Final chapter • From my heart
+</div>
+
+<h1 class="serif" style="font-size:48px;line-height:.9;">
+One last<br>
+<span style="color:#d995a8;font-style:italic;">
+surprise.
+</span>
+</h1>
+
+<p class="description">
+There are some things that are easier<br>
+to write than to say.
+</p>
+
+<div class="envelope" id="envelope">
+
+<div class="env-back"></div>
+
+<div class="flap"></div>
+
+<div class="env-front"></div>
+
+<div class="seal">
+♥
+</div>
+
+</div>
+
+<div class="envelope-hint">
+Tap the envelope to open your letter 💌
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= FINAL PAGE ================= -->
+
+<div class="final" id="final">
+
+<div class="final-card">
+
+<img
+class="final-photo"
+src="kubra3.jpg"
+alt="Kubra"
+>
+
+<h1 class="final-title">
+Happy 26th
+<span>Kubra! ❤️</span>
+</h1>
+
+<div class="final-date">
+23 • AUGUST • 2026
+</div>
+
+<div class="message" id="message"></div>
+
+<div class="signature">
+Love you always 🤍<br>
+— Shanza
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* ================= HELPERS ================= */
+
+function showPage(current,next){
+
+document.getElementById(current).classList.remove("active");
+
+setTimeout(function(){
+
+document.getElementById(next).classList.add("active");
+
+},200);
+
+}
+
+
+/* ================= MUSIC ================= */
+
+const music=document.getElementById("music");
+
+const musicBtn=document.getElementById("musicBtn");
+
+document.getElementById("beginBtn").addEventListener("click",function(){
+
+music.play().catch(function(){});
+
+musicBtn.textContent="♫";
+
+showPage("page1","page2");
+
+});
+
+musicBtn.addEventListener("click",function(){
+
+if(music.paused){
+
+music.play();
+
+musicBtn.textContent="♫";
+
+}else{
+
+music.pause();
+
+musicBtn.textContent="🔇";
+
+}
+
+});
+
+
+/* ================= CONFETTI ================= */
+
+function confetti(amount){
+
+for(let i=0;i<amount;i++){
+
+const piece=document.createElement("div");
+
+piece.className="confetti";
+
+piece.style.left=Math.random()*100+"vw";
+
+piece.style.background=
+"hsl("+Math.random()*360+",75%,70%)";
+
+piece.style.animationDelay=
+Math.random()*0.7+"s";
+
+document.body.appendChild(piece);
+
+setTimeout(function(){
+
+piece.remove();
+
+},3500);
+
+}
+
+}
+
+
+/* ================= BALLOONS ================= */
+
+const balloons=document.querySelectorAll(".balloon");
+
+let balloonsLeft=9;
+
+balloons.forEach(function(balloon){
+
+balloon.addEventListener("click",function(){
+
+if(balloon.classList.contains("pop")){
+return;
+}
+
+balloon.classList.add("pop");
+
+balloonsLeft--;
+
+document.getElementById("counter").textContent=
+balloonsLeft+" BALLOONS LEFT";
+
+confetti(8);
+
+if(balloonsLeft===0){
+
+setTimeout(function(){
+
+showPage("page2","page3");
+
+},900);
+
+}
+
+});
+
+});
+
+
+/* ================= CAKE ================= */
+
+let candlesDone=false;
+
+document.getElementById("blowBtn").addEventListener("click",function(){
+
+if(candlesDone){
+return;
+}
+
+candlesDone=true;
+
+document.querySelectorAll(".flame").forEach(function(flame){
+
+flame.classList.add("off");
+
+});
+
+confetti(50);
+
+setTimeout(function(){
+
+showPage("page3","page4");
+
+},1500);
+
+});
+
+
+/* ================= MEMORIES ================= */
+
+const cards=document.querySelectorAll(".photo-card");
+
+const captions=[
+"A beautiful moment ✨",
+"A smile worth remembering 🌷",
+"One of those little memories 🤍",
+"Some memories stay forever 🫶🏻"
+];
+
+let currentPhoto=0;
+
+function updateGallery(){
+
+cards.forEach(function(card,index){
+
+card.classList.remove("current");
+
+if(index===currentPhoto){
+
+card.classList.add("current");
+
+}
+
+});
+
+document.getElementById("caption").textContent=
+captions[currentPhoto];
+
+}
+
+function nextPhoto(){
+
+currentPhoto++;
+
+if(currentPhoto>=cards.length){
+
+currentPhoto=0;
+
+}
+
+updateGallery();
+
+}
+
+function previousPhoto(){
+
+currentPhoto--;
+
+if(currentPhoto<0){
+
+currentPhoto=cards.length-1;
+
+}
+
+updateGallery();
+
+}
+
+let touchStart=0;
+
+document.getElementById("gallery").addEventListener(
+"touchstart",
+function(e){
+
+touchStart=e.touches[0].clientX;
+
+},
+{passive:true}
+);
+
+document.getElementById("gallery").addEventListener(
+"touchend",
+function(e){
+
+const difference=
+e.changedTouches[0].clientX-touchStart;
+
+if(Math.abs(difference)>45){
+
+if(difference<0){
+
+nextPhoto();
+
+}else{
+
+previousPhoto();
+
+}
+
+}else{
+
+nextPhoto();
+
+}
+
+},
+{passive:true}
+);
+
+document.getElementById("gallery").addEventListener(
+"click",
+function(){
+
+nextPhoto();
+
+}
+);
+
+
+document.getElementById("continueBtn").addEventListener(
+"click",
+function(){
+
+showPage("page4","page5");
+
+}
+);
+
+
+/* ================= ENVELOPE ================= */
+
+document.getElementById("envelope").addEventListener(
+"click",
+function(){
+
+this.classList.add("open");
+
+confetti(60);
+
+setTimeout(function(){
+
+document.getElementById("final").classList.add("show");
+
+typeMessage();
+
+startHearts();
+
+},1000);
+
+}
+);
+
+
+/* ================= FINAL MESSAGE ================= */
+
+const birthdayMessage=
+`Happy Birthday to one of the most special people in my life. 🤍
+
+Kubra, having you as my elder sister is truly one of the blessings I am grateful for.
+
+We may have our little fights, disagreements and crazy moments 😂, but at the end of the day, you will always have a very special place in my heart.
+
+As you turn 26, I pray that Allah fills your life with endless happiness, peace, success and beautiful moments.
+
+May every wish hidden in your heart come true. May your smile always stay bright, and may Allah protect you from every sadness and difficulty. Ameen. 🤲🏻
+
+I hope this new chapter of your life brings you everything you deserve and so much more.
+
+Never forget how loved, precious and special you are.
+
+Happy 26th Birthday, Kubra. ❤️
+`;
+
+function typeMessage(){
+
+const element=document.getElementById("message");
+
+let index=0;
+
+function write(){
+
+if(index< birthdayMessage.length){
+
+element.textContent+=birthdayMessage.charAt(index);
+
+index++;
+
+setTimeout(write,18);
+
+}
+
+}
+
+write();
+
+}
+
+
+/* ================= HEARTS ================= */
+
+function startHearts(){
+
+setInterval(function(){
+
+const heart=document.createElement("div");
+
+heart.className="heart";
+
+heart.textContent=
+Math.random()>0.5 ? "❤️" : "🤍";
+
+heart.style.left=
+Math.random()*100+"vw";
+
+heart.style.fontSize=
+(14+Math.random()*14)+"px";
+
+heart.style.animationDuration=
+(4+Math.random()*3)+"s";
+
+document.getElementById("final").appendChild(heart);
+
+setTimeout(function(){
+
+heart.remove();
+
+},7000);
+
+},650);
+
+}
+
+</script>
+
+</body>
+  </html>
